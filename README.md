@@ -4,7 +4,7 @@
 
 Docker
 
-or
+	or
 
 Python 3
 
@@ -44,6 +44,7 @@ docker-compose up
 Base URL​:​ http://localhost:5000/api/v1
 
 ### GET /products
+```
 Response:
 200 OK
 [
@@ -53,8 +54,10 @@ Response:
 		“description”: 5
 	}
 ]
+```
 
 ### GET /products/:id:
+```
 Response:
 200 OK
 [
@@ -69,8 +72,10 @@ Response:
 	“code”: “NOT FOUND”,
 	“msg”: <message>
 }
+```
 
 ### POST /products
+```
 Request:
 {
 	“name”: “Benzinová sekačka Dosquarna”,
@@ -86,8 +91,10 @@ Response:
 	“code”: “BAD_REQUEST”,
 	“msg”: <message>
 }
+```
 
 ### PUT /products/:id:
+```
 Request:
 id in path;
 {
@@ -104,8 +111,10 @@ Response:
 	“code”: “NOT FOUND”,
 	“msg”: <message>
 }
+```
 
 ### DELETE /products/:id:
+```
 Request:
 id in path
 Response:
@@ -117,6 +126,7 @@ Response:
 	“code”: “NOT FOUND”,
 	“msg”: <message>
 }
+```
 
 ## Running the tests
 
@@ -130,7 +140,7 @@ pytest
 
 * [Flask](https://palletsprojects.com/p/flask/) - a micro web framework
 * [SQLAlchemy](https://www.sqlalchemy.org/) - SQL toolkit and object relational mapper
-* [Celery](fttp://www.celeryproject.org/) - distributed task Queue
+* [Celery](http://www.celeryproject.org/) - distributed task queue
 * [Requests](https://requests.readthedocs.io/en/master/) - HTTP library
 
 ## License
