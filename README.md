@@ -7,7 +7,9 @@ Docker
 or
 
 Python 3
+
 Redis
+
 MySQL
 
 ## Installing
@@ -124,7 +126,7 @@ Run:
 pytest
 ```
 
-## Built With
+## Built with
 
 * [Flask](https://palletsprojects.com/p/flask/) - a micro web framework
 * [SQLAlchemy](https://www.sqlalchemy.org/) - SQL toolkit and object relational mapper
